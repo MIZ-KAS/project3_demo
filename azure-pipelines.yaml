@@ -37,8 +37,8 @@ stages:
             commandOptions: '-backend-config=$(azsecret.secureFilePath)'
             backendType: 'azurerm'
             backendServiceArm: 'service-connection-azurerm'
-            backendAzureRmResourceGroupName: 'Azuredevops'
-            backendAzureRmStorageAccountName: 'tfstate29331'
+            backendAzureRmResourceGroupName: 'tfstate'
+            backendAzureRmStorageAccountName: 'tfstate17297'
             backendAzureRmContainerName: 'tfstate'
             allowTelemetryCollection: true
           
