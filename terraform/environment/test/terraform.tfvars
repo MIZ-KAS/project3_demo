@@ -6,8 +6,8 @@ tenant_id = "f2918e1b-7b96-4aca-947c-654049b84f00"
 
 # Resource Group/Location
 location = "eastus"
-resource_group = "tfstate" # The same resource_group use to create the backend state and container
-application_type = "p3demo"
+resource_group = "Azuredevops" # The same resource_group use to create the backend state and container
+application_type = "project3demo"
 
 # Network
 virtual_network_name = "P3_vnet"
@@ -16,4 +16,4 @@ address_prefix_test = "10.5.1.0/24"
 
 
 # Tags
-demo = "p3demo"
+demo = "project3demo"
