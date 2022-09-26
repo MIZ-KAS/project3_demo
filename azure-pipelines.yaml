@@ -111,25 +111,25 @@ stages:
               targetPath: '$(Build.ArtifactStagingDirectory)/selenium-$(Build.BuildId).zip'
               artifactName: 'drop-selenium'
 
-  #- stage: Deploy 
-    #jobs:
-      #- deployment: deploy_fakerestapi
-        #displayName: Deploy FakeRestAPI
-        #pool:
-          #vmImage: 'ubuntu-latest'
-        #environment: 'TEST'
-        #strategy:
-          #runOnce:
-            #deploy:
-              #steps:
-              #- task: AzureRmWebAppDeployment@4
-                #inputs:
-                  #ConnectionType: 'AzureRM'
-                  #azureSubscription: 'service-connection-azurerm'
-                  #appType: 'webApp'
-                  #WebAppName: 'p3demo-AppService'
-                  #packageForLinux: '$(Pipeline.Workspace)/drop-fakerestapi/fakerestapi-$(Build.BuildId).zip'
-                  #DeploymentType: zipDeploy 
+  - stage: Deploy 
+    jobs:
+      - deployment: deploy_fakerestapi
+        displayName: Deploy FakeRestAPI
+        pool:
+          vmImage: 'ubuntu-latest'
+        environment: 'TEST'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - task: AzureRmWebAppDeployment@4
+                inputs:
+                  ConnectionType: 'AzureRM'
+                  azureSubscription: 'service-connection-azurerm'
+                  appType: 'webApp'
+                  WebAppName: 'project3demo-AppService'
+                  packageForLinux: '$(Pipeline.Workspace)/drop-fakerestapi/fakerestapi-$(Build.BuildId).zip'
+                  DeploymentType: zipDeploy 
 
       #- deployment: VMDeploy
         #displayName: Deploy Virtual Machine
