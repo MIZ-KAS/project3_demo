@@ -195,7 +195,7 @@ AppServiceHTTPLogs
 
 ```
 
- ![APPhttps Logs](Apphttplogs.PNG "Http logs") 
+![APPhttps Logs](Apphttplogs.PNG "Http logs") 
 
 
 Go back to the App Service web page and navigate on the links and also generate 404 not found , example:
@@ -206,6 +206,7 @@ https://project3demo-appservice.azurewebsites.net/sheeeeee
 https://project3demo-appservice.azurewebsites.net/first page
 ```
 After the trigger, check the email configured since an alert message will be received. 
+
 
 ![Email](email.PNG "Email")
 
