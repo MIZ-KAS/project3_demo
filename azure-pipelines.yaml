@@ -224,10 +224,17 @@ stages:
                   sudo mkdir /var/log/selenium
                   sudo chmod 777 /var/log/selenium
             fi            
-            python3 ./automatedtesting/selenium/login.py | sudo tee -a /var/log/selenium/selenium-test.log
+            python3 ./automatedtesting/selenium/login.py 2>&1 | sudo tee -a /var/log/selenium/selenium-test.log
             cd $(System.DefaultWorkingDirectory)
             mkdir -p log/selenium              
-            sudo cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log            
+            sudo cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log
+            ls -al
+      - task: PublishPipelineArtifact@1
+        displayName: Publish selenium logs
+        inputs:
+          targetPath: '$(System.DefaultWorkingDirectory)/log/selenium/selenium-test.log'
+          artifact: 'drop-selenium-logs'
+          publishLocation: 'pipeline'
 
     - job: PerformanceTest
       displayName: Test JMeter
