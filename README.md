@@ -3,9 +3,9 @@ Demonstrating building a CI/CD pipeline with Azure DevOps
 
 ## Status
 
-[![Badge Image](images/badget.PNG)](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main)
+[![Badge Image (images/badget.PNG)](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main)]
 
-
+[![Build Status](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main)](https://dev.azure.com/lawalshakirat66/project3_demo/_build/latest?definitionId=31&branchName=main)
 
 ### Introduction 
 In this project, Azure DevOps is used to build a CI/CD pipeline that create and deploy in infrastructure using terraform, Azure App service to host a website - FakeRestAPI.
