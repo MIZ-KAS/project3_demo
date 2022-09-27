@@ -59,18 +59,6 @@ bash config.sh
 
 Create an azsecret.conf which will contains variables to be uploaded and use our pipeline as group variable 
 
-``` json
-storage_account_name= "tfstate$RAMDOM"
-container_name= "tfstate"
-key = "terraform.tfstate" 
-access_key= "Generated Access key"
-
-
-subscription_id = "$SUB_ID" 
-client_id = "$CLIENT_ID" 
-client_secret = "$CLIENT_SECRET" 
-tenant_id = "$TENANT_ID" 
-```
 
 Go to your local terminal and create SSH key that the VM will use to Login, A public key (id_rsa.pub) and A private key (id_rsa) will be created and save.
 
