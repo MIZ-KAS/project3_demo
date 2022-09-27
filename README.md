@@ -63,16 +63,16 @@ bash config.sh
 Create an azsecret.conf which will contains variables to be uploaded and use our pipeline as group variable 
 
 ``` json
-storage_account_name= "tfstate$RANDOM"
+storage_account_name= "tfstate$RAMDOM"
 container_name= "tfstate"
 key = "terraform.tfstate" 
-access_key= "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+access_key= "Generated Access key"
 
 
-subscription_id = "d4926xxxxxxxxxxxxxxxxxxxxxxxxx" 
-client_id = "a5fxxxxxxxxxxxxxxxxxxxxxxx" 
-client_secret = "qoxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
-tenant_id = "fxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
+subscription_id = "$SUB_ID" 
+client_id = "$CLIENT_ID" 
+client_secret = "$CLIENT_SECRET" 
+tenant_id = "$TENANT_ID" 
 ```
 
 Goto your local termail and create SSH key that the VM will use to Login, A public key (id_rsa.pub) and A private key (id_rsa) will be created and save.
@@ -117,8 +117,33 @@ After a successful Deploy run, it should look something like this:
 ![Installed azagent](images/installedagent.PNG "installed azagent")
 
 
-### terrafrom apply
+### Terrafrom apply
 
 ![terraform apply](images/terraformapply.PNG "installed azagent")
 
+### Deployed Webapp
 
+![Terraform deployed webapp](images/deployedwebterraform.PNG " Terraform Deployed webapp")
+
+![Deployed webapp](images/deployedwebapp.PNG "Deployed webapp")
+
+#### Testing 
+
+### Regression test 
+
+![Regression test](images/regtest.PNG "Reg test")
+
+
+### Validation test 
+
+![Validation test](images/valtest.PNG "Val test")
+
+### Publish Test Results
+
+![Reg Result](images/regxml.PNG "Reg result")
+
+![Val Result](images/valxml.PNG "Val result")
+
+### Selinium Test Result
+
+![Selenium Result](images/seleniumtest.PNG "Selenium Result")
