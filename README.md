@@ -3,7 +3,7 @@ Demonstrating building a CI/CD pipeline with Azure DevOps
 
 ## Status
 
-[![Build Status](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main)](https://dev.azure.com/lawalshakirat66/project3_demo/_build/latest?definitionId=31&branchName=main)
+[![Build Status](https://dev.azure.com/lawalshakirat66/project3_demo/_apis/build/status/MIZ-KAS.project3_demo?branchName=main&stageName=Deploy)](https://dev.azure.com/lawalshakirat66/project3_demo/_build/latest?definitionId=31&branchName=main)
 
 
 ### Introduction 
