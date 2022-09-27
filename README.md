@@ -10,6 +10,7 @@ Demonstrating building a CI/CD pipeline with Azure DevOps
 In this project, Azure DevOps is used to build a CI/CD pipeline that create and deploy in infrastructure using terraform, Azure App service to host a website - FakeRestAPI.
 The automated test runs on a self-hosted test runner, a Linux Virtual machine is deployed to use to deploy the UI test with selenium, Integration test with postman and a stress test with Jmeter.
 
+![Structure](images/structure.PNG "structure")
 
 ### Project Dependencies
 - [Terraform](https://www.terraform.io/downloads.html)
